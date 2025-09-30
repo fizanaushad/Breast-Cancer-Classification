@@ -1,32 +1,33 @@
-# Breast-Cancer-Classification
-CNN model for Breast Cancer Histopathology Image Classification.
-📖 Overview
+# 🧠 Breast Cancer Classification using CNN (CancerNet)
 
-This project implements a Convolutional Neural Network (CNN) to classify breast histopathology images as either:
+![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
+![Keras](https://img.shields.io/badge/Keras-TensorFlow-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-    Cancer (IDC Positive)
+---
 
-    No Cancer (IDC Negative)
+## 📖 Overview
+Breast cancer is one of the most common and deadly diseases among women worldwide.  
+This project implements a **Convolutional Neural Network (CNN)** model, inspired by **CancerNet**, to automatically classify **breast histopathology images** into:
 
-The model is inspired by CancerNet, a lightweight CNN designed for medical image analysis.
-It was trained on the Breast Histopathology Images Dataset from Kaggle and achieves good performance on unseen test samples.
+- ✅ **No Cancer (IDC Negative)**  
+- ❌ **Cancer (IDC Positive)**  
 
-📂 Dataset
+The model was trained and evaluated on the **Breast Histopathology Images Dataset** from Kaggle, achieving strong classification performance.
 
-Source: Breast Histopathology Images (Kaggle)
+---
 
-Description:
+## 📂 Dataset
+- **Source:** [Breast Histopathology Images – Kaggle](https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images)  
+- **Description:**
+  - 277,524 **50×50 RGB image patches** from breast cancer histopathology slides  
+  - Two classes:
+    - `0` → IDC Negative (No Cancer)  
+    - `1` → IDC Positive (Cancer)  
 
-277,524 50×50 RGB patches from breast cancer histopathology slides.
+---
 
-Two classes:
-
-    0 → IDC Negative (No Cancer)
-
-    1 → IDC Positive (Cancer)
-
-⚙️ Project Workflow
-
+## ⚙️ Workflow
 -> Data Preprocessing
 
 -> Train / Validation / Test split
@@ -62,10 +63,20 @@ Evaluation:
 -> Prediction
 
 -> Predicts on individual images or a batch of random images
-📊 Results
+
+
+# 📊 Results
+| Metric    | Value |
+| --------- | ----- |
+| Accuracy  | ~85%  |
+| Precision | ~83%  |
+| Recall    | ~86%  |
+| F1-score  | ~84%  |
 
 Achieved > 80% accuracy on the validation set.
 
 Clear separation between cancerous and non-cancerous tissue patches.
+# Plots:
+<img width="571" height="460" alt="download" src="https://github.com/user-attachments/assets/efbeb524-4fa0-4636-9132-b441730ee7a2" />
 
 
