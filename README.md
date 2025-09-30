@@ -4,9 +4,9 @@ CNN model for Breast Cancer Histopathology Image Classification.
 
 This project implements a Convolutional Neural Network (CNN) to classify breast histopathology images as either:
 
-Cancer (IDC Positive)
+    Cancer (IDC Positive)
 
-No Cancer (IDC Negative)
+    No Cancer (IDC Negative)
 
 The model is inspired by CancerNet, a lightweight CNN designed for medical image analysis.
 It was trained on the Breast Histopathology Images Dataset from Kaggle and achieves good performance on unseen test samples.
@@ -21,46 +21,51 @@ Description:
 
 Two classes:
 
-0 → IDC Negative (No Cancer)
+    0 → IDC Negative (No Cancer)
 
-1 → IDC Positive (Cancer)
+    1 → IDC Positive (Cancer)
 
 ⚙️ Project Workflow
 
-Data Preprocessing
+-> Data Preprocessing
 
-Train / Validation / Test split
+-> Train / Validation / Test split
 
-Normalization and augmentation (rotation, zoom, flips)
+-> Normalization and augmentation (rotation, zoom, flips)
 
-Model Architecture (CancerNet)
+-> Model Architecture (CancerNet)
 
-Convolutional layers with ReLU activation
+-> Convolutional layers with ReLU activation
 
-MaxPooling layers
+-> MaxPooling layers
 
-Fully connected dense layers
+-> Fully connected dense layers
 
-Softmax output for binary classification
+-> Softmax output for binary classification
 
-Training
+-> Training
 
 Optimizer: Adagrad
 
-Loss: binary_crossentropy
+-> Loss: binary_crossentropy
 
-Trained for 20–40 epochs
+-> Trained for 20–40 epochs
 
-Evaluation
+Evaluation: 
 
-Accuracy
+-> Accuracy
 
-Classification Report (Precision, Recall, F1-score)
+-> Classification Report (Precision, Recall, F1-score)
 
-Confusion Matrix
+-> Confusion Matrix
 
-Prediction
+-> Prediction
 
-Predicts on individual images
+-> Predicts on individual images or a batch of random images
+📊 Results
 
-Can classify multiple random test images in batch
+Achieved > 80% accuracy on the validation set.
+
+Clear separation between cancerous and non-cancerous tissue patches.
+
+
